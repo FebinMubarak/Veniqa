@@ -18,7 +18,7 @@ export default {
                 return result;
             }
             
-            if (!user.addresses) { user.addresses = []; }
+            if (user.addresses) { user.addresses = []; }
 
             // Save the address to the user record
             user.addresses.push({
